@@ -16,3 +16,8 @@
 .local/state/
 .local/share/applications/
 .local/share/nvim/
+mis-config-arch/
+yoru/
+.zsh_history
+.wget-hsts
+.zcompdump
