@@ -441,6 +441,9 @@ clientbuttons = gears.table.join(
 root.keys(globalkeys)
 -- }}}
 
+-- Carga picom con la configuración deseada
+awful.spawn.with_shell("picom --config  /home/hawk/.config/picom/picom.conf")
+
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
