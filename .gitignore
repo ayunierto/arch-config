@@ -21,3 +21,4 @@ yoru/
 .zsh_history
 .wget-hsts
 .zcompdump
+.xsession-errors.old
