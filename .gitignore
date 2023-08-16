@@ -23,3 +23,9 @@ yoru/
 .zcompdump
 .xsession-errors.old
 .config/pavucontrol.ini
+.config/neofetch/
+.config/dconf/
+.local/share/recently-used.xbel
+.npm
+.viminfo
+Downloads
