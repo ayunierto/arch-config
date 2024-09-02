@@ -1,2 +1,2 @@
 # arch-config
-# arch-config
+Configuration for awesomewm
