@@ -4,6 +4,7 @@ pcall(require, "luarocks.loader")
 
 -- Standard awesome library
 local gears = require("gears")
+local gfs = require("gears.filesystem")
 local awful = require("awful")
 require("awful.autofocus")
 -- Widget and layout library
@@ -43,13 +44,22 @@ do
 end
 -- }}}
 
+naughty.notify(
+    { 
+        -- preset = naughty.config.presets.critical,
+        title = "Example Notification!",
+        text = "Hi, this is an error" 
+    }
+)
+
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+-- beautiful.init("/home/alcides/.config/awesome/theme.lua")
+beautiful.init(gfs.get_configuration_dir() .. "theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
-editor = os.getenv("EDITOR") or "nano"
+terminal = "kitty"
+editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
